@@ -7,14 +7,15 @@ import '../index.css'
 import chain from '../images/chain.png'
 import spark from '../images/spark.png'
 import { Link } from 'react-router-dom'
+
 const Hero = () => {
   return (
-    <div className="h-[650px] md:h-screen relative first-grad">
+    <div className="h-full first-grad pb-5">
         <div>
             <Header />
         </div>
         {/* for the innovative write up at the top */}
-        <div className='flex flex-col justify-end max-w-[1240px] mx-auto px-2 md:px-0 min-w-fit'>
+        <div className='flex flex-col justify-end max-w-[1280px] mx-auto px-2 md:px-0 min-w-fit'>
             <h3 className='text-white font-montserrat lg:text-3xl md:text-xl text-sm italic font-semibold flex md:justify-end justify-center'>Igniting an innovation in HR Innovation.</h3>
             {/* for the pink underline */}
             <div className='flex justify-end pr-10 md:pr-0'>
@@ -22,20 +23,20 @@ const Hero = () => {
             </div>
         </div>
         {/* div holding the two flexboxs together */}
-        <div className='flex flex-col md:flex-row mx-auto max-w-[1240px]'>
+        <div className='flex flex-col md:flex-row mx-auto max-w-[1280px]'>
             {/* first flexbox */}
-                <div className='flex flex-col gap-2 md:w-1/2 w-full md:mt-10'>
+                <div className='flex flex-col gap-2 md:w-1/2 w-full mx-auto'>
 
                     {/* for the first lightbulb */}
                     <div className='flex justify-end'>
-                        <img src={bulb} alt="bulb" className='relative top-6 right-[16%] h-5 w-5 md:h-full md:w-auto' />
+                        <img src={bulb} alt="bulb" className='relative top-6 right-[46%] h-5 w-5 md:h-full md:w-auto' />
                     </div>
                     {/*  for the hero writeup*/}
                     <div className='flex flex-row'>
                        <h1 className='text-white font-montserrat font-extrabold lg:text-7xl text-4xl text-center md:text-start'>getlinked Tech Hackathon <span className='text-light-purple'>1.0</span></h1>
                        <div className=' hidden xl:flex justify-center items-center'>
-                        <img src={chain} alt="" className='fixed lg:top-[49%] lg:right-[50%]' />
-                        <img src={spark} alt="" className='fixed lg:top-[50%] lg:right-[47%]' />
+                        <img src={chain} alt="" className='relative lg:top-[29%] lg:right-[2%]' />
+                        <img src={spark} alt="" className='relative lg:top-[30%] lg:right-[2%]' />
                        </div>
                        
                     </div>
@@ -76,7 +77,7 @@ const Hero = () => {
                 </div>
 
                 {/* second flexbox */}
-                <div className='flex flex-col md:w-1/2 w-full'>
+                <div className='flex flex-col md:w-1/2 w-full justify-end'>
                    <img src={VR} alt="" />
                 </div>
 

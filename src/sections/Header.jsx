@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
 
-    <div class={nav ? "bg-transparent lg:pb-2 mx-auto max-w-[1240px] relative top-0" : "bg-transparent mx-auto"}>
+    <div class={nav ? "bg-transparent lg:pb-2 mx-auto max-w-[1280px] relative top-0" : "bg-transparent mx-auto"}>
     <div class="px-4 md:px-2 md:py-2 py-4 w-full">
       <header class="flex items-center justify-between py-4 md:py-4 md:pt-10 w-full">
         {/* <!-- logo - start --> */}

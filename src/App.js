@@ -15,8 +15,6 @@ function App() {
       <Route path='/register' element={<Register />} />
       <Route path='/contact' element={<Contact />} />    
       </Routes>
-     
-      
       </BrowserRouter>
       
     </div>
