@@ -662,6 +662,10 @@ video {
   margin-top: 5rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -913,6 +917,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -936,11 +945,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -984,11 +988,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-blue-500{
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1049,6 +1048,21 @@ video {
 .fifth-grad {
   background: 
        radial-gradient(ellipse 250px 250px at 30% 30%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);
+}
+
+/* fot the timeline component */
+
+.vertical-timeline-element--work .vertical-timeline-element{
+  border-bottom: 3px solid #e91e63
+}
+
+.date{
+  color: #D434FE;
+  font-family: Montserrat;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 @media (min-width: 768px){

@@ -5,6 +5,10 @@ import Rules from '../sections/Rules'
 import Attributes from '../sections/Attributes'
 import FAQs from '../sections/FAQs'
 import Timeline from '../sections/Timeline'
+import Prices from '../sections/Prices'
+import Sponsors from '../sections/Sponsors'
+import Privacy from '../sections/Privacy'
+import Footer from "../sections/Footer"
 const Home = () => {
   return (
     <div>
@@ -14,7 +18,10 @@ const Home = () => {
       <Attributes />
       <FAQs />
       <Timeline />
-      
+      <Prices />
+      <Sponsors />
+      <Privacy />
+      <Footer />
     </div>
   )
 }

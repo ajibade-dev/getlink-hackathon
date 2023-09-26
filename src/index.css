@@ -24,3 +24,19 @@
 
         .fifth-grad {background: 
        radial-gradient(ellipse 250px 250px at 30% 30%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
+
+       /* fot the timeline component */
+      
+/*     
+    .timeline-container {
+        @apply relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 md:ml-auto md:pl-16;
+    }
+    .timeline-container-left {
+        @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16;
+    }
+    .timeline-pointer {
+        @apply absolute inset-0 left-10 h-4 w-4 transform rotate-45 bg-white xs:top-11 xs:left-26 md:left-14;
+    }
+    .timeline-pointer-left {
+        @apply md:left-auto md:right-14;
+    } */
