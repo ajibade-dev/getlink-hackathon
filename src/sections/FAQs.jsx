@@ -3,7 +3,7 @@ import cloud from '../images/cloud.png'
 import plus from '../icons/plus.svg'
 const FAQs = () => {
   return (
-    <div className='flex flex-col-reverse md:flex-row justify-center items-center bg-deep-blue'>
+    <div className='flex flex-col-reverse md:flex-row justify-center items-center bg-deep-blue' id='faq'>
       
     <div className='flex flex-col md:flex-row bg-deep-blue w-full max-w-[1600px] py-20 lg:px-20 px-10'>
 

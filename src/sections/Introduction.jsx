@@ -3,7 +3,7 @@ import lightbulb from '../images/lightbulb.png'
 
 const Introduction = () => {
   return (
-    <div className='flex flex-col md:flex-row mx-auto bg-deep-blue '>
+    <div className='flex flex-col md:flex-row mx-auto bg-deep-blue ' id='overview'>
       
       <div className='flex flex-col md:flex-row bg-deep-blue mx-auto items-center justify-center py-10 max-w-[1559px]'>
 

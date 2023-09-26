@@ -11,7 +11,7 @@ import six from '../icons/six.svg'
 const Timeline = () => {
 
   return (
-   <div className='bg-deep-blue'>
+   <div className='bg-deep-blue' id='timeline'>
       
     <div className="relative container mx-auto px-6 flex flex-col space-y-8">
             <div

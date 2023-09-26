@@ -44,9 +44,9 @@ const Header = () => {
   
         {/* <!-- nav - start --> */}
         <nav class=" hidden gap-12 lg:flex items-center font-montserrat">
-         <a href="#" className="text-base font-normal text-white transition duration-100">Timeline</a>
-          <a href="#" className="text-base font-normal text-white transition duration-100 ">Overview</a>
-          <a href="#" className="text-base text-white transition duration-100 font-normal ">FAQs</a>
+         <a href="#timeline" className="text-base font-normal text-white transition duration-100">Timeline</a>
+          <a href="#overview" className="text-base font-normal text-white transition duration-100">Overview</a>
+          <a href="#faq" className="text-base text-white transition duration-100 font-normal">FAQs</a>
          <Link to='/contact'><a href="#" className="text-base text-white transition duration-100 font-normal ">Contact</a></Link> 
           <Link to='/register'><a href="" className='px-10 py-4 text-white text-center rounded-md font-normal font-montserrat primary-color'>Register</a></Link>
         </nav>
