@@ -43,7 +43,7 @@ const Privacy = () => {
           <p className='text-white font-montserrat font-normal md:text-base leading-[30px] w-full ml-4 text-xs'>You are licensed to use the item available at any free source sites, for your project developement</p>
 
           </div>
-
+            {/* the button underneath */}
           <div className='flex justify-center mt-14'>
 
             <a href="" className='px-10 py-4 text-white text-center rounded-md font-normal font-montserrat primary-color'>Read More</a>

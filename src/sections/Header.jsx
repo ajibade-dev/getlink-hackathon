@@ -12,19 +12,19 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
   // to give sticky menu another color when scrolling
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const isScrolled = window.scrollY > 0;
-  //     setScrolled(isScrolled);
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
 
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-  // const navbarClass = scrolled ? 'bg-[#000000] ' : 'bg-transparent';
+  const navbarClass = scrolled ? 'bg-[#000000] ' : 'bg-transparent';
 
 //to open and close the menu in mobile
   const handleNav = () => {
@@ -33,21 +33,21 @@ const Header = () => {
 
   return (
 
-    <div class={nav ? "bg-transparent lg:pb-2 mx-auto max-w-[1280px] relative top-0" : "bg-transparent mx-auto"}>
-    <div class="px-4 md:px-2 md:py-2 py-4 w-full">
-      <header class="flex items-center justify-between py-4 md:py-4 md:pt-10 w-full">
+    <div className={ nav ? "bg-transparent lg:pb-2 mx-auto max-w-[1280px] relative top-0" : "bg-transparent mx-auto"}>
+    <div className="px-4 md:px-2 md:py-2 py-4 w-full">
+      <header className="flex items-center justify-between py-4 md:py-4 md:pt-10 w-full">
         {/* <!-- logo - start --> */}
-        <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-white md:text-3xl" aria-label="logo">
+        <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold text-white md:text-3xl" aria-label="logo">
         <img src={getlinked} alt="" />
         </a>
         {/* <!-- logo - end --> */}
   
         {/* <!-- nav - start --> */}
-        <nav class=" hidden gap-12 lg:flex items-center font-montserrat">
-         <a href="#timeline" className="text-base font-normal text-white transition duration-100">Timeline</a>
-          <a href="#overview" className="text-base font-normal text-white transition duration-100">Overview</a>
-          <a href="#faq" className="text-base text-white transition duration-100 font-normal">FAQs</a>
-         <Link to='/contact'><a href="#" className="text-base text-white transition duration-100 font-normal ">Contact</a></Link> 
+        <nav className=" hidden gap-12 lg:flex items-center font-montserrat">
+         <a href="#timeline" className="text-base font-normal text-white transition duration-100  hover:text-slate-300 active:text-light-purple">Timeline</a>
+          <a href="#overview" className="text-base font-normal text-white transition duration-100  hover:text-slate-300 active:text-light-purple">Overview</a>
+          <a href="#faq" className="text-base text-white transition duration-100 font-normal  hover:text-slate-300 active:text-light-purple">FAQs</a>
+         <Link to='/contact'><a href="#" className="text-base text-white transition duration-100 font-normal  hover:text-slate-300 active:text-light-purple">Contact</a></Link> 
           <Link to='/register'><a href="" className='px-10 py-4 text-white text-center rounded-md font-normal font-montserrat primary-color'>Register</a></Link>
         </nav>
         {/* <!-- nav - end --> */}
@@ -66,11 +66,11 @@ const Header = () => {
         </div>
           
       <ul className='flex flex-col w-1/3 pt-4 gap-8 font-montserrat bg-deep-blue'>
-      <a href="#" className="text-base font-normal text-white transition duration-100">Timeline</a>
-          <a href="#" className="text-base font-normal text-white transition duration-100 ">Overview</a>
-          <a href="#" className="text-base text-white transition duration-100 font-normal ">FAQs</a>
-          <Link to='/contact'><a href="#" className="text-base text-white transition duration-100 font-normal">Contact</a></Link>
-          <Link to='/register'><a href="" className='px-10 py-4 text-white text-center rounded-md font-normal font-montserrat primary-color'>Register</a></Link>
+      <a href="#timeline" className="text-base font-normal text-white transition duration-100 hover:text-slate-300 active:text-light-purple">Timeline</a>
+          <a href="#overview" className="text-base font-normal text-white transition duration-100 hover:text-slate-300 active:text-light-purple">Overview</a>
+          <a href="#faq" className="text-base text-white transition duration-100 font-normal hover:text-slate-300 active:text-light-purple">FAQs</a>
+          <Link to='/contact'><a href="#" className="text-base text-white transition duration-100 font-normal hover:text-slate-300 active:text-light-purple">Contact</a></Link>
+          <Link to='/register'><a href="" className='px-10 py-4 text-white text-center rounded-md font-normal font-montserrat primary-color hover:text-slate-300 active:text-light-purple'>Register</a></Link>
       </ul>
       </div>
     </div>

@@ -13,17 +13,12 @@
 .first-grad {background: 
   radial-gradient(ellipse 250px 250px at 30% 30%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
  
-  .second-grad {background: 
-    radial-gradient(ellipse 300px 300px at 25% 40%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
+.second-grad {background: 
+    radial-gradient(ellipse 250px 250px at 10% 45%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
 
-    .third-grad {background: 
+ .third-grad {background: 
       radial-gradient(ellipse 250px 250px at 90% 70%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
 
-      .fourth-grad {background: 
-        radial-gradient(ellipse 200px 200px at 90% 70%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
-
-        .fifth-grad {background: 
-       radial-gradient(ellipse 250px 250px at 30% 30%, rgba(77, 35, 131, 0.8) 2%, #150E28 90%);}
 
        /* fot the timeline component */
       
