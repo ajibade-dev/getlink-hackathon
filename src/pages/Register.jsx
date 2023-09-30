@@ -19,6 +19,7 @@ const Register = () => {
 
 
 
+
   const handleCheckboxChange = (e) => {setIsChecked(e.target.checked)};
 
   const handleChange = (e) => {
@@ -26,6 +27,7 @@ const Register = () => {
   };
 
   const handleChanges = (e) => {
+    e.preventDefault();
     setSelectedOptions(e.target.value);
   };
 
@@ -33,6 +35,10 @@ const Register = () => {
   // for the submitting of the form
   const onSubmit = async (data, event) => {
     event.preventDefault();
+    setIsChecked(false)
+    setSelectedOption('');
+    setSelectedOptions('')
+    setNumValue('');
     setTextValue('');
     setEmailValue('');
     setTextsValue('');
@@ -102,7 +108,7 @@ const Register = () => {
                 </h3>
             <input
             
-            type="number" value={numValue} placeholder='Enter your phone number' id='number'  className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full first:placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("name", { required: true })}
+            type="number" value={numValue} placeholder='Enter your phone number' id='number'  className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full first:placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("number", { required: true })}
             />
             </div>
            
@@ -117,7 +123,7 @@ const Register = () => {
                 </h3>
                   <input
             
-            type="email" value={textValue} placeholder='Enter your email address' id='name' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("name", { required: true })}
+            type="email" value={textValue} placeholder='Enter your email address' id='email' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("email", { required: true })}
             />
             {/* the error message to be displayed */}
             {errors.name && ( <span role="alert" className='text-red-400 font-montserrat mt-2'>
@@ -131,7 +137,7 @@ const Register = () => {
                 </h3>
                   <input
             
-            type="text" value={textValue} placeholder='What is your group project topic' id='name' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("name", { required: true })}
+            type="text" value={textValue} placeholder='What is your group project topic' id='project' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("project", { required: true })}
             />
             {/* the error message to be displayed */}
             {errors.name && ( <span role="alert" className='text-red-400 font-montserrat mt-2'>
@@ -209,7 +215,7 @@ const Register = () => {
         
 
       </div>
-{/* for the other icons showing in the bottom */}
+
 
       </div>
     </div>
