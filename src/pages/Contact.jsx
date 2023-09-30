@@ -55,7 +55,7 @@ const Contact = () => {
   
 
   return (
-    <div className='h-screen w-full second-grad pb-5'>
+    <div className='h-auto w-full second-grad pb-5'>
       <div>
         <Header />
       </div>

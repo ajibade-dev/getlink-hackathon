@@ -43,7 +43,7 @@ const Register = () => {
 
 
   return (
-    <div className='h-full w-full second-grad pb-5'>
+    <div className='h-auto w-full second-grad pb-5'>
       <div>
         <Header />
       </div>
