@@ -26,7 +26,7 @@ const Contact = () => {
   
 
     try {
-      const response = await fetch('{{https://backend.getlinked.ai}}/hackathon/contact-form', {
+      const response = await fetch('{{https://backend.getlinked.ai/}}/hackathon/contact-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Set the appropriate content type
@@ -55,7 +55,7 @@ const Contact = () => {
   
 
   return (
-    <div className='h-full w-full second-grad pb-5'>
+    <div className='h-screen w-full second-grad pb-5'>
       <div>
         <Header />
       </div>
