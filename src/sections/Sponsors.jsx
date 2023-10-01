@@ -1,5 +1,7 @@
 import React from 'react'
 import partners from "../images/partners.png"
+import { motion } from 'framer-motion'
+
 
 const Sponsors = () => {
   return (
@@ -9,14 +11,41 @@ const Sponsors = () => {
 
         {/* the writing at the top */}
         <div className='text-white font-montserrat text-center mx-auto'>
-            <h1 className='font-bold md:text-3xl text-xl'>Partners and Sponsors</h1>
-            <p className='mx-auto md:w-[35%] w-full mt-5 text-xs md:text-base'>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
+            <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: {opacity: 1, y: 0 }
+            }}
+            className='font-bold md:text-3xl text-xl'>Partners and Sponsors</motion.h1>
+            <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay:0.2 }}
+            variants={{
+                hidden: { opacity: 0, y: -40 },
+                visible: {opacity: 1, y: 0 }
+            }}
+            className='mx-auto md:w-[35%] w-full mt-5 text-xs md:text-base'>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</motion.p>
         </div>
 
         {/* the image underneath */}
-        <div className='flex justify-center mt-10'>
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5, delay:0.3 }}
+        variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: {opacity: 1, y: 0 }
+        }}
+        className='flex justify-center mt-10'>
           <img src={partners} alt="" className='md:px-10 px-0'/>
-      </div>
+      </motion.div>
         </div>
         </div>
   )

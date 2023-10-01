@@ -4,6 +4,7 @@ import facebook from "../icons/facebook.svg"
 import insta from "../icons/insta.svg"
 import mdi from "../icons/mdi_instagram.svg"
 import x from "../icons/x.svg"
+import { motion } from 'framer-motion'
 
 import { useForm} from "react-hook-form"
 
@@ -65,22 +66,76 @@ const Contact = () => {
 
       {/* the first flexbox */}
       <div className='hidden md:flex flex-col my-40 w-1/2'>
-      <p className='text-light-purple font-montserrat font-bold text-4xl leading-5 mb-4'>
+      <motion.p
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.3 }}
+      variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: {opacity: 1, x: 0 }
+      }}
+      className='text-light-purple font-montserrat font-bold text-4xl leading-5 mb-4'>
       Get in touch
-        </p>
-        <p className='text-white font-montserrat font-normal text-base leading-5 mt-4 '>
+        </motion.p>
+        <motion.p
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.3, delay:0.1 }}
+        variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+        className='text-white font-montserrat font-normal text-base leading-5 mt-4 '>
        Contact Information
-        </p>
-        <p className='text-white font-montserrat font-normal text-base leading-5 mt-6 w-1/3'>
+        </motion.p>
+        <motion.p
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5, delay:0.2 }}
+        variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+        className='text-white font-montserrat font-normal text-base leading-5 mt-6 w-1/3'>
         27,Alara Street Yaba 100012 Lagos State
-        </p>
-        <p className='text-white font-montserrat font-normal text-base leading-5 mt-6'>
+        </motion.p>
+        <motion.p
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5, delay:0.3 }}
+        variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+        className='text-white font-montserrat font-normal text-base leading-5 mt-6'>
         Call Us : 07067981819
-        </p>
-        <p className='text-white font-montserrat font-normal text-base leading-5 mt-6 w-1/2'>
+        </motion.p>
+        <motion.p
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5, delay:0.4 }}
+        variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+        className='text-white font-montserrat font-normal text-base leading-5 mt-6 w-1/2'>
         we are open from Monday-Friday 08:00am - 05:00pm
-        </p>
-        <div className='flex flex-col gap-3'>
+        </motion.p>
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5, delay:0.5 }}
+        variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {opacity: 1, x: 0 }
+        }}
+        className='flex flex-col gap-3'>
         <p className='text-light-purple font-montserrat font-normal text-base leading-5 mt-4'>
        Share on
         </p>
@@ -102,12 +157,21 @@ const Contact = () => {
         </div>
         </div>
         
-        </div>
+        </motion.div>
       </div>
 
 
       {/* the second div */}
-      <div className='relative md:w-1/2 w-auto shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-10 lg:px-20 px-6 mx-4 md:mx-0'>
+      <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5, delay:0.3 }}
+      variants={{
+          hidden: { opacity: 0, x: 50 },
+          visible: {opacity: 1, x: 0 }
+      }}
+      className='relative md:w-1/2 w-auto shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-10 lg:px-20 px-6 mx-4 md:mx-0'>
         {/* the writing at the top */}
         <div className='mt-[15%] font-montserrat'>
         <p className='text-light-purple font-montserrat font-bold text-xl leading-5 mb-4'>
@@ -169,9 +233,18 @@ const Contact = () => {
 
         
 
-      </div>
+      </motion.div>
 {/* for the other icons showing in the bottom */}
-<div className='flex md:hidden flex-col mx-auto gap-3 mt-4'>
+<motion.div 
+initial="hidden"
+whileInView="visible"
+viewport={{ once: true, amount: 0.5 }}
+transition={{ duration: 0.5, delay:0.2}}
+variants={{
+    hidden: { opacity: 0, y: 50 },
+    visible: {opacity: 1, y: 0 }
+}}
+className='flex md:hidden flex-col mx-auto gap-3 mt-4'>
         <p className='text-light-purple font-montserrat font-normal text-base text-center leading-5 mt-4'>
        Share on
         </p>
@@ -193,7 +266,7 @@ const Contact = () => {
         </div>
         </div>
         
-        </div>
+        </motion.div>
       </div>
     </div>
   )

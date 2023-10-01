@@ -55,7 +55,7 @@ const Register = () => {
       </div>
 
       {/* the div holding the 2 flexbox divs */}
-      <div className='flex lg:flex-row flex-col max-w-[1350px] mx-auto'>
+      <div className='flex lg:flex-row flex-col max-w-[1350px] mx-auto items-center'>
 
       {/* the first flexbox */}
       <div className='my-10 lg:w-1/2 w-full'>
@@ -65,7 +65,7 @@ const Register = () => {
 
 
       {/* the second div */}
-      <div className='lg:w-1/2 w-full shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-5 md:mt-10 lg:px-12 px-6'>
+      <div className=' flex flex-col lg:w-1/2 w-[350px] shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-5 md:mt-10 lg:px-12 px-6 mx-2 md:mx-0'>
         {/* the writing at the top */}
         <div className='mt-[15%] font-montserrat'>
         <p className='text-light-purple font-montserrat font-bold text-3xl leading-5 mb-4'>
@@ -79,13 +79,13 @@ const Register = () => {
         </div>
         
 
-        <p className=' text-white font-montserrat font-normal text-2xl leading-5 mt-6'>
+        <p className=' text-white font-montserrat font-normal lg:text-2xl text-xl leading-5 mt-6'>
         CREATE YOUR ACCOUNT
         </p>
         </div>
 
         {/* for the form */}
-        <div className='font-montserrat mt-10'>
+        <div className='font-montserrat mt-10 flex flex-col items-center justify-center'>
           <form onSubmit={handleSubmit(onSubmit)}>
 
             {/* the fist row input at the top */}
@@ -97,7 +97,7 @@ const Register = () => {
                 </h3>
               <input
             
-            type="text" value={textValue} placeholder='Enter the name of your group' id='name' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("name", { required: true })}
+            type="text" value={textValue} placeholder='Enter the name of your group' id='name' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("name", { required: true })}
             />
               </div>
            
@@ -108,7 +108,7 @@ const Register = () => {
                 </h3>
             <input
             
-            type="number" value={numValue} placeholder='Enter your phone number' id='number'  className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full first:placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("number", { required: true })}
+            type="number" value={numValue} placeholder='Enter your phone number' id='number'  className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] first:placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("number", { required: true })}
             />
             </div>
            
@@ -123,7 +123,7 @@ const Register = () => {
                 </h3>
                   <input
             
-            type="email" value={textValue} placeholder='Enter your email address' id='email' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("email", { required: true })}
+            type="email" value={textValue} placeholder='Enter your email address' id='email' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("email", { required: true })}
             />
             {/* the error message to be displayed */}
             {errors.name && ( <span role="alert" className='text-red-400 font-montserrat mt-2'>
@@ -137,7 +137,7 @@ const Register = () => {
                 </h3>
                   <input
             
-            type="text" value={textValue} placeholder='What is your group project topic' id='project' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("project", { required: true })}
+            type="text" value={textValue} placeholder='What is your group project topic' id='project' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0'  {...register("project", { required: true })}
             />
             {/* the error message to be displayed */}
             {errors.name && ( <span role="alert" className='text-red-400 font-montserrat mt-2'>
@@ -156,7 +156,7 @@ const Register = () => {
                 </h3>
                 <label>
                 
-                  <select placeholder='What is your group project topic' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0 bg-black bg-opacity-30' value={selectedOption} onChange={handleChange}>
+                  <select placeholder='What is your group project topic' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0 bg-black bg-opacity-30' value={selectedOption} onChange={handleChange}>
                     <option value="">Select your category</option>
                     <option value="option1">Option 1</option>
                     <option value="option2">Option 2</option>
@@ -176,7 +176,7 @@ const Register = () => {
 
                 <label>
                 
-                <select placeholder='What is your group project topic' className='px-4 text-white font-montserrat text-base md:w-[263px] h-[47px] w-full placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0 bg-black bg-opacity-30' value={selectedOptions} onChange={handleChanges}>
+                <select placeholder='What is your group project topic' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0 bg-black bg-opacity-30' value={selectedOptions} onChange={handleChanges}>
                   <option value="">Select</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
@@ -207,7 +207,7 @@ const Register = () => {
             {/* for the button */}
         <div className='flex justify-center mt-8 mb-8'>
 
-        <button href="" className='px-10 py-4 w-full text-white text-center rounded-md font-normal font-montserrat primary-color'>Register Now</button>
+        <button href="" className='px-10 py-4 md:w-full w-[172px] text-white text-center rounded-md font-normal font-montserrat primary-color'>Submit</button>
         </div>
           </form>
         </div>
