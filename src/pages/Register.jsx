@@ -65,7 +65,7 @@ const Register = () => {
 
 
       {/* the second div */}
-      <div className=' flex flex-col lg:w-1/2 w-[350px] shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-5 md:mt-10 lg:px-12 px-6 mx-2 md:mx-0'>
+      <div className=' flex flex-col lg:w-1/2 w-[370px] shadow-3xl ring-1 ring-gray-900/5 border rounded-lg bg-white bg-opacity-5 border-opacity-30 border-black mt-5 md:mt-10 lg:px-12 px-6'>
         {/* the writing at the top */}
         <div className='mt-[15%] font-montserrat'>
         <p className='text-light-purple font-montserrat font-bold text-3xl leading-5 mb-4'>
@@ -85,11 +85,11 @@ const Register = () => {
         </div>
 
         {/* for the form */}
-        <div className='font-montserrat mt-10 flex flex-col items-center justify-center'>
+        <div className='font-montserrat mt-10'>
           <form onSubmit={handleSubmit(onSubmit)}>
 
             {/* the fist row input at the top */}
-            <div className='flex md:flex-row gap-4 flex-col'>
+            <div className='flex md:flex-row gap-4 flex-col items-center md:items-start'>
               {/* Team Name */}
               <div>
                 <h3 className='font-normal text-sm text-white mb-2' >
@@ -97,7 +97,7 @@ const Register = () => {
                 </h3>
               <input
             
-            type="text" value={textValue} placeholder='Enter the name of your group' id='name' className='px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("name", { required: true })}
+            type="text" value={textValue} placeholder='Enter the name of your group' id='name' className=' px-4 text-white font-montserrat text-base w-[263px] md:h-[47px] h-[39px] placeholder:font-normal placeholder:text-sm placeholder:text-slate-400 border-white border-2 rounded-md bg-transparent placeholder:placeholder:py-0' {...register("name", { required: true })}
             />
               </div>
            
@@ -115,7 +115,7 @@ const Register = () => {
             </div>
 
             {/* the second row */}
-              <div className='flex md:flex-row gap-4 flex-col mt-4'>
+              <div className='flex md:flex-row gap-4 flex-col mt-4 items-center md:items-start'>
                   {/* email field */}
                   <div className='flex flex-col'>
                   <h3 className='font-normal text-sm text-white mb-2' >
@@ -147,7 +147,7 @@ const Register = () => {
               </div>
 
               {/* the third row */}
-              <div className='flex md:flex-row gap-4 flex-col mt-4'>
+              <div className='flex md:flex-row gap-4 flex-col mt-4 items-center md:items-start'>
 
                   {/* category field */}
                   <div className='flex flex-col'>
@@ -171,7 +171,7 @@ const Register = () => {
                   {/* the group size field*/}
                   <div className='flex flex-col'>
                   <h3 className='font-normal text-sm text-white mb-2' >
-                  Project Topic
+                   Group Size
                 </h3>
 
                 <label>
@@ -191,10 +191,10 @@ const Register = () => {
                  
               </div>      
         
-              <p className='font-montserrat italic text-red-600 md:text-xs text-[9px] mt-4'>Please review your registration details before submitting</p>
+              <p className='font-montserrat italic text-red-600 md:text-xs text-[9px] mt-4 text-center md:text-start'>Please review your registration details before submitting</p>
 
               {/* for the checkbox */}
-              <label className="mt-10 font-montserrat text-white text-xs">
+              <label className="mt-10 font-montserrat text-white text-xs text-center md:text-start">
               <input
                 type="checkbox"
                 checked={isChecked}
